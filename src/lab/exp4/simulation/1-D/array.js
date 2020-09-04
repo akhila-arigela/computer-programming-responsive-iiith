@@ -49,8 +49,14 @@ window.view = {
 	},
 	activateEvents: function() {
 		this.addClickEvent('btnOk', function() { view.proceedToStartButton() })
+		this.addClickEvent('btnRandom',function(){view.disabletextarea()})
 		this.addClickEvent('btnStart', function() { view.displayElements() })
 		this.addClickEvent('btnNext', function() { view.sortArray() })
+	},
+	disabletextarea : function() {
+
+		var el=document.getElementById('userInput')
+		el.disabled = true
 	},
 	proceedToStartButton: function() {
 		var userInput = this.getArraySize()
