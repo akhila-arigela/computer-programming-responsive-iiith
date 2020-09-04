@@ -243,7 +243,7 @@ window.view = {
 		}
 		else if ( this.lastRedDiv.id === 'line13' ) {
 			this.insertKey()
-			this.removeImage()
+			this.setKet()
 			this.highlightNextStep()
 		}
 		else if ( this.lastRedDiv.id === 'line14' ) {
